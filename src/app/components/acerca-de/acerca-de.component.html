@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        
+        <img src="../../../assets/perfilPhoto.jpeg" class="img-fluid" id="fotodeperfil">
+        <a>probandop</a>
+
+
+        
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngFor="let Persona of per">
+        
+        <p id="nombre">{{Persona.nombre}} {{Persona.apellido}}</p>
+        
+        
+        
+    </div>
+    
+    
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let Persona of per">
+        <span >
+            <h1 class="Edit">Acerca de mí</h1>
+            
+            
+            <p id="nombre">{{Persona.bio}}</p>
+ 
+
+            <div *ngIf="isLogged" class="Edit">
+                <button class="btn btn-light d-flex justify-content-end" routerLink="/editace/{{Persona.id}}"  >
+                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </div>
+
+            
+        </span>
+        
+    </div>
+</div> 
