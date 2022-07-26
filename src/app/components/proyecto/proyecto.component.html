@@ -1,36 +1,36 @@
+
 <div class="row">
-    <h1>Proyectos realizados</h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaproy" *ngIf="isLogged">
             Nuevo proyecto
         </button>
-    </div>
-    
-        
-    <div class="col-lg-11">
-        <table class="table">   
-        <tbody>
-            <tr *ngFor="let Proyecto of proy">
-                <td>
-                    <h2>{{Proyecto.titulo}}</h2>
-                </td>
-                <td>{{Proyecto.resumen}}</td>
-                <div class="img-proyecto">
-                    <img [src]="Proyecto.enlace" class="w-25 h-25">
-                </div>
+    </div>   
+    <h1>Proyectos realizados</h1>
+    <div class="contenedor" *ngFor="let Proyecto of proy">
+        <div>
+            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h1>{{Proyecto.titulo}}</h1>
+                <p>{{Proyecto.resumen}}</p>
                 
-                <td *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editproy/{{Proyecto.id}}">
-                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                        <i class="bi bi-trash-fill"></i> BORRAR</button>
-                </td>
-            </tr>
-        </tbody>
-        </table>  
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-2 parte2">
+                <a href={{Proyecto.enlace}}><img [src]="Proyecto.imagen" class="img-proyecto"  ></a>
+            </div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editproy/{{Proyecto.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </td>
+
+            
+
+
+        </div>
     </div>
+</div>
     
     
         

@@ -1,11 +1,9 @@
+
 .row{
     padding: 20px;
-    background-image: linear-gradient(grey, black);
+    background-color: #a1b5cb;
 }
-h1, p, td{
-    color: white;
-}
-.contenedor, tbody{
+.contenedor{
     width: auto;
 }
 .parte1, .parte2{
@@ -13,9 +11,7 @@ h1, p, td{
     text-align: justify;
 }
 .img-proyecto{
-    box-shadow: 10px 10px 30px white;
+    box-shadow: 10px 10px 30px #000000;
     box-shadow: ejeX ejeY difumasion color;
+    
 }
-
-
-
