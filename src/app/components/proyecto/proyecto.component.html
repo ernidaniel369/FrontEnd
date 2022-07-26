@@ -15,7 +15,10 @@
                     <h2>{{Proyecto.titulo}}</h2>
                 </td>
                 <td>{{Proyecto.resumen}}</td>
-                <td>{{Proyecto.enlace}}</td>
+                <div class="img-proyecto">
+                    <img [src]="Proyecto.enlace" class="w-25 h-25">
+                </div>
+                
                 <td *ngIf="isLogged">
                     <button class="btn btn-light" routerLink="/editproy/{{Proyecto.id}}">
                         <i class="bi bi-pencil-fill"></i> EDITAR</button>
