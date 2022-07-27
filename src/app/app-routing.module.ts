@@ -11,6 +11,8 @@ import { EditacercaComponent } from './components/acerca-de/editacerca.component
 
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EdithysComponent } from './components/hys/edithys.component';
+import { NewhysComponent } from './components/hys/newhys.component';
 
 
 
@@ -27,7 +29,9 @@ const routes: Routes = [
   { path: 'editexp/:id', component: EditExperienciaComponent},
   { path: 'editedu/:id', component: EditEducacionComponent},
   { path: 'editace/:id', component: EditacercaComponent},
-  { path: 'editproy/:id', component: EditproyectoComponent}
+  { path: 'editproy/:id', component: EditproyectoComponent},
+  { path: 'nuevahab', component: EdithysComponent},
+  { path: 'edithab/:id', component: NewhysComponent}
 ];
 
 @NgModule({
