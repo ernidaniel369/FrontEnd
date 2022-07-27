@@ -1,0 +1,10 @@
+.home{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(42,42,42,1) 50%, rgba(65,65,65,1) 100%);
+}
+
+*{
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}

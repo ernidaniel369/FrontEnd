@@ -2,7 +2,6 @@
     padding: 20px;
 }
 div{
-    background-color: #545454;
     text-align: center;
 }
 
@@ -10,9 +9,15 @@ div{
     display: inline-block;
 }
 
-h1,p{
-    color: white;
+.img-nom{
+    display: flex;
+    flex-direction: column;
 }
+.nombre-usu{
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
     #fotodeperfil{
