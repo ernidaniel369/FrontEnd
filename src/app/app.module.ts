@@ -25,6 +25,8 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
 import { EditacercaComponent } from './components/acerca-de/editacerca.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { NewhysComponent } from './components/hys/newhys.component';
+import { EdithysComponent } from './components/hys/edithys.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { NewProyectoComponent } from './components/proyecto/new-proyecto.compone
     EditacercaComponent,
     EditproyectoComponent,
     NewProyectoComponent,
+    NewhysComponent,
+    EdithysComponent,
          
   ],
   imports: [
