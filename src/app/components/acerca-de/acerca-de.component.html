@@ -1,23 +1,24 @@
-<div class="row">
+<div class="row g-0">
 
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 img-nom" *ngFor="let Persona of per">
+    <div class="col d-flex flex-column" *ngFor="let Persona of per">
 
-        <div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fotoperfil">
             <img [src]="Persona.img" class="img-fluid" id="fotodeperfil">
         </div>
 
-        <div *ngFor="let Persona of per">
-            <p id="nombre" class="fs-2 font-monospace text-center nombre-usu">{{Persona.nombre}} {{Persona.apellido}}</p>
+        <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngFor="let Persona of per">
+            <p id="nombre" class="fs-2 font-monospace text-center py-1 nombre-usu">{{Persona.nombre}} {{Persona.apellido}}</p>
+            <p class="font-monospace fs-4 text-center">Desarrollador Web Full Stack Jr.</p>
         </div>
         
 
     </div>
     
-    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 px-5" *ngFor="let Persona of per">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let Persona of per">
         <span >
-            <h1 class="Edit">Acerca de mí</h1>
+            <h1 class="Edit pt-5">Acerca de mí</h1>
             
-            <p id="nombre" class="fs-5 fw-light">{{Persona.bio}}</p>
+            <p id="nombre" class="fs-5 fw-light p-3">{{Persona.bio}}</p>
  
             <div *ngIf="isLogged" class="Edit">
                 <button class="btn btn-light d-flex justify-content-end" routerLink="/editace/{{Persona.id}}"  >

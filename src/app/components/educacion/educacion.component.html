@@ -1,28 +1,24 @@
-<div class="row">
+<div class="row g-0">
     <h1>Educacion</h1>
-    <div class="col-lg-1">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark my-1" routerLink="/nuevaedu" *ngIf="isLogged">
             Nueva Educacion
         </button>
     </div>
+    <div class="col lg 1"></div>
     <div class="col-lg-11">
-        <table class="table">
-            <tbody>
+        <table class="table table-borderless">
+            <tbody class="row">
                 <tr *ngFor="let Educacion of edu">
-                    <td>
-                        <h2>{{Educacion.tituloEd}}</h2>
-                    </td>
-                    <td>
-                        <h2>{{Educacion.tiempoEd}}</h2>
-                    </td>
-                    <td>{{Educacion.descripcionEd}}</td>
-                    <td *ngIf="isLogged">
+                    <td class="col-lg-6 col-md-8 col-sm-12 d-flex justify-content-start"><h2>{{Educacion.tituloEd}} - </h2><h2 class="mx-3">{{Educacion.tiempoEd}}</h2></td>
+                    <td class="col-lg-8 col-md-8 col-sm-12 descripcion">{{Educacion.descripcionEd}}</td>
+                    <td class="col-lg-1 col-md-1 col-sm-2 editar" *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
                     </td>
-                    <td *ngIf="isLogged">
+                    <td class="col-lg-1 col-md-1 col-sm-2 borrar" *ngIf="isLogged">
                         <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
                     </td>
                 </tr>
             </tbody>

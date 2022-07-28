@@ -2,9 +2,13 @@
     padding: 20px;
 }
 
-h1, h3{
-    display: inline;
-}
 td{
     color: white;
 } 
+
+@media (max-width: 575.98px) {
+    .descripcion, .editar, .borrar{
+        display: flex;
+        flex-direction: column;
+    }
+}

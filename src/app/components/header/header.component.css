@@ -1,8 +1,8 @@
 .row{
     background-color: black;
+    width: auto;
 }
 
-app-social{
-    float: right;
-    margin-top: 25px;
+app-banner{
+    padding: 0;
 }

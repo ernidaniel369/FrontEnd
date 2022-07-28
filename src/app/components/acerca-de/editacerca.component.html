@@ -1,7 +1,7 @@
-<div class="container" *ngIf="perlab">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+<div class="container-fluid py-1 m-5" *ngIf="perlab">
+    <div class="row d-flex justify-content-center">
+        <div class="card">
+            <form class="form-card" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="perlab.nombre" required>

@@ -1,6 +1,4 @@
-.row{
-    padding: 20px;
-}
+
 div{
     text-align: center;
 }
@@ -9,38 +7,27 @@ div{
     display: inline-block;
 }
 
-.img-nom{
-    display: flex;
-    flex-direction: column;
-}
-.nombre-usu{
-    margin-top: 130px;
-    margin-left: 60px;
-}
 
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
     #fotodeperfil{
-        position: absolute;
-        width: 15%;
+        /*position: absolute;*/
+        width: 40%;
+        margin-top: 10px;
         border-radius: 100%;
         box-shadow: 3px 3px 3px black;
-        left: 3%;
-        top:550px;
+        left: 6%;
+        /*top:700px;*/
     }
 }
 @media (max-width: 575px){
     #fotodeperfil{
-        position: absolute;
-        width: 30%;
+        /*position: absolute;*/
+        width: 35%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px black;
         left: 33%;
-        top:950px;
+        margin-top: 20px;
     }
 }
 
-/*etiqueta nombre*/
-#nombre{
-    font-weight: bold;  
-}
