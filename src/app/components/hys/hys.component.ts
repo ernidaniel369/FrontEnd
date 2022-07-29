@@ -28,6 +28,7 @@ export class HysComponent implements OnInit {
   cargarHabilidades(): void {
     this.sHabilidades.lista().subscribe(data => { this.hab = data;})
   }
+  
 
   delete(id?: number){
     if(id != undefined){
