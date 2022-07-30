@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 
 export class PersonaService {
   
-  URL = 'http://localhost:8080/perlab/';
+  URL = 'https://server3693.herokuapp.com/perlab/';
 
   constructor(private httpClient: HttpClient) { }
 

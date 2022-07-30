@@ -7,7 +7,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proyURL = 'http://localhost:8080/proylab/';
+  proyURL = 'https://server3693.herokuapp.com/proylab/';
 
   constructor(private httpClient: HttpClient) { }
 

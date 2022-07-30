@@ -7,7 +7,7 @@ import { Habilidades } from '../model/habilidades';
   providedIn: 'root'
 })
 export class SHabilidadesService {
-  habURL = 'http://localhost:8080/hablab/';
+  habURL = 'https://server3693.herokuapp.com/hablab/';
 
   constructor(private httpClient: HttpClient) { }
 
