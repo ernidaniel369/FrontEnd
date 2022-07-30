@@ -11,7 +11,6 @@
             <p class="font-monospace fs-4 text-center">Desarrollador Web Full Stack Jr.</p>
         </div>
         
-
     </div>
     
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let Persona of per">
@@ -19,12 +18,11 @@
             <h1 class="Edit pt-5">Acerca de mí</h1>
             
             <p id="nombre" class="fs-5 fw-light p-3">{{Persona.bio}}</p>
- 
+
             <div *ngIf="isLogged" class="Edit">
                 <button class="btn btn-light d-flex justify-content-end" routerLink="/editace/{{Persona.id}}"  >
                 <i class="bi bi-pencil-fill"></i> EDITAR</button>
             </div>
-            
         </span>
     </div>
 

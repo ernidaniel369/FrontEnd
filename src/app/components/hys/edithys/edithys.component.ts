@@ -12,8 +12,7 @@ export class EdithysComponent implements OnInit {
 
   habLab: Habilidades = null;
 
-  constructor(private sHabilidades: SHabilidadesService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+  constructor(private sHabilidades: SHabilidadesService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];

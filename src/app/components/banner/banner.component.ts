@@ -12,10 +12,8 @@ export class BannerComponent implements OnInit {
 
   per: persona[] = [];
   
-
   constructor(private sPersona: PersonaService, private tokenService: TokenService) { }
   
-
   isLogged = false;
 
   ngOnInit(): void {

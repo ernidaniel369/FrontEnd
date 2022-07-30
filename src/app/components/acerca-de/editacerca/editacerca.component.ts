@@ -12,8 +12,7 @@ export class EditacercaComponent implements OnInit {
 
   perlab: persona = null;
 
-  constructor(private sPersona: PersonaService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+  constructor(private sPersona: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -38,6 +37,6 @@ export class EditacercaComponent implements OnInit {
       }
     )
   }
-
+  
 }
 

@@ -11,10 +11,8 @@ import { TokenService } from 'src/app/service/token.service';
 export class AcercaDeComponent implements OnInit {
   per: persona[] = [];
   
-
   constructor(private sPersona: PersonaService, private tokenService: TokenService) { }
   
-
   isLogged = false;
 
   ngOnInit(): void {

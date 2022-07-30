@@ -18,15 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
-import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
-import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
-import { NewEducacionComponent } from './components/educacion/new-educacion.component';
-import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
-import { EditacercaComponent } from './components/acerca-de/editacerca.component';
-import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
-import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
-import { NewhysComponent } from './components/hys/newhys.component';
-import { EdithysComponent } from './components/hys/edithys.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { EditacercaComponent } from './components/acerca-de/editacerca/editacerca.component';
+import { EditproyectoComponent } from './components/proyecto/editproyecto/editproyecto.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
+import { EdithysComponent } from './components/hys/edithys/edithys.component';
+import { NewhysComponent } from './components/hys/newhys/newhys.component';
 
 @NgModule({
   declarations: [

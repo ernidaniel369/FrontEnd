@@ -9,12 +9,10 @@ import { SHabilidadesService } from 'src/app/service/s-habilidades';
   styleUrls: ['./newhys.component.css']
 })
 export class NewhysComponent implements OnInit {
-
-    nombre : string = '';
-    nivel : number;
-    imagen : string = '';
+  nombre : string = '';
+  nivel : number;
+  imagen : string = '';
   
-
   constructor(private sHabilidades: SHabilidadesService, private router: Router) { }
 
   ngOnInit(): void {

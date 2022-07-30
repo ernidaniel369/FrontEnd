@@ -2,15 +2,10 @@
     <div class="container">
         <div class="logo mx-2">
             <img src="../../../assets/APLogo.png" id="logoAP">
-
         </div>
-        
         <div class="redes">
             <a href="https://www.linkedin.com/in/daniel-erni-731430137/" class="mx-2"><img src="../../../assets/linkedin.png" id="linkedin"></a>
             <a href="https://github.com/ernidaniel369" class="mx-2"><img src="../../../assets/github.png" id="github"></a>
-        
-        
-         
             <button type="button" class="btn btn-outline-light mx-2" (click)="login()" *ngIf="!isLogged">INGRESO</button>
             <button type="button" class="btn btn-outline-light mx-2" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
         </div>

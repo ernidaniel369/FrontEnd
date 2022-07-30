@@ -11,8 +11,7 @@ import { SEducacionService } from 'src/app/service/s-educacion.service';
 export class EditEducacionComponent implements OnInit {
   eduLab: Educacion = null;
 
-  constructor(private sEducacion: SEducacionService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+  constructor(private sEducacion: SEducacionService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];

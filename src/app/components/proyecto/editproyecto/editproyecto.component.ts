@@ -21,7 +21,7 @@ export class EditproyectoComponent implements OnInit {
       data =>{
         this.proylab = data;
       }, err =>{
-        alert("Error al modificar experiencia");
+        alert("Error al modificar el proyecto");
         this.router.navigate(['']);
       }
     )
