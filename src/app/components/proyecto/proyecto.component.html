@@ -14,15 +14,12 @@
                 <a href={{Proyecto.enlace}}><img [src]="Proyecto.imagen" class="img-fluid img-proyecto "></a>
             </div>
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-3">
-            <td *ngIf="isLogged">
-                <button class="btn btn-light mx-2" routerLink="/editproy/{{Proyecto.id}}">
-                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
-            </td>
-            <td *ngIf="isLogged">
-                <button class="btn btn-danger mx-2" (click)="delete(Proyecto.id)">
-                    <i class="bi bi-trash-fill"></i> BORRAR</button>
-            </td>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-3" *ngIf="isLogged">
+            
+            <button class="btn btn-light mx-2" routerLink="/editproy/{{Proyecto.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
+
+            <button class="btn btn-danger mx-2" (click)="delete(Proyecto.id)"><i class="bi bi-trash-fill"></i> BORRAR</button>
+            
         </div>
     </div>
 </div>
