@@ -28,16 +28,6 @@ export class AcercaDeComponent implements OnInit {
     this.sPersona.lista().subscribe(data => { this.per = data; })
   }
 
-  delete(id?: number){
-    if(id != undefined){
-      this.sPersona.delete(id).subscribe(
-        data => {
-          this.cargarPersona();
-        }, err => {
-          alert("No se pudo borrar la persona");
-        }
-      )
-    }
-  }
+  
 
 }
